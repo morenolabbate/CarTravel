@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <title>Car Travel</title>
+        <meta charset="utf-8">
+        <style>body, html { overflow: hidden; }</style>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/91/three.min.js"></script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/r91/examples/js/controls/OrbitControls.js" async></script>
+
+    <body style="margin:0;">
+
+    <div id="myIconSet">
+        <div><img src="icons/arcade_icon.png" id="myProgressIcon"></div>
+        <div><img src="icons/arcade_icon.png" id="myProgressMoneyIcon"></div>
+
+
+    </div>
+    <div class = "fixed" id="myProgress">
+        <span><div id="myBar"> 100 </div></span>
+    </div>
+    <div class = "fixedMoney" id="myProgressMoney">
+        <div id="myBarMoney"> 0 </div>
+        <span id="chrono">00:00:00</span>
+        <span><div id = "myShieldSet"><img src="icons/arcade_icon.png" id="myShieldIcon"></div> </span>
+    </div>
+            <script type="text/javascript" src="index.js" async></script>
+
+    <div id="loading">
+        <img id="loading-image" src="images/loadingT.gif"/>
+
+    </div>
+     <div class = "speedUp-container" id = "speedUpContainer">SPEED UP</div>
+
+    <div class="message-container" id="container">
+            <p id="labelAlert">GAME OVER</p>
+            <p id="recordAlert"></p>
+            <button id="btn-restart" style="color: #FFF">Play again</button>
+            <button id="btn-return">
+                <a style="text-decoration:none; color: #FFF" href="menu.html" >Return Menu</a>
+            </button>
+    </div>
+
+        <button id="btn-soundOn"><img src="images/soundOn.png"></button>
+        <button id="btn-soundOff"><img src="images/soundOff.png"></button>
+
+
+    </body>
+</html>

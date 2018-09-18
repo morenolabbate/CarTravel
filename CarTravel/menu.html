@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MenuCarTravel</title>
+    <style>body, html { overflow: hidden; }
+    </style>
+    <link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+
+
+<body style="margin:0;">
+
+<div class="menu-container" id="menu" style="overflow-y: scroll; border:1px solid black;">
+    <p>CAR TRAVEL</p>
+    <button id="btn-start">
+        <a style="text-decoration:none; color: #FFF" href="index.html" onclick="location.href=this.href+'?username='+ document.getElementById('username').value + '&difficulty=' + document.getElementById('levelMenu').value; return false;" >Play</a>
+    </button>
+
+    <button id="btn-controls">
+        <a style="text-decoration:none;color: #FFF" href="controls.html">Controls</a>
+    </button>
+
+    <button id="topTen">
+        <a style="text-decoration:none;" href="record.html"><img src="images/score.png"></a>
+    </button>
+
+    <select id="levelMenu" style="color: #000">
+            <option value="easy" >Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+    </select>
+
+    <label id="labelNick" style="cursor:default" >Insert nickname</label>
+    <input id="username" style="color: #000" value="Guest"> </input>
+
+
+    <div class="help"> <img src="images/help.png">
+        <span class="helpT">
+            <img src="images/eSad.png" align="center">&nbsp;Life decreases of 5 units<br>
+            <img src="images/eHeart.png" align="center">&nbsp;Life increases of 5 units<br>
+            <img src="images/eMoney.png" align="center">&nbsp;Budget increases of 5 coins<br>
+            <img src="images/eIce.png" align="center">&nbsp;Car movements are blocked for 3 seconds<br>
+            <img src="images/eShield.png" align="center">&nbsp;Makes the car immune for 5 sec
+        </span>
+    </div>
+
+</div>
+
+</body>
+</html>
